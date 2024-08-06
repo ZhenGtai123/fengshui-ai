@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fengshui Chatbot</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0R3GXH6EJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L0R3GXH6EJ');
+</script>
+</head>
+<body>
+  <main>
+
+  
+    <header>
+    
+      <div class="nav-toggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+        Menu
+      </div>
+      <div class="logo">
+        <a href="index.html">
+                  <img class="logo" src="img/logo.webp" alt="Feng Shui Analysis Logo">
+        </a>
+      </div>
+      <div class="search-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M18 11a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        Search
+    </div>
+          <nav>
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </nav>
+          <div class="search-container">
+              <input type="text" placeholder="Search...">
+              <button type="button">Search</button>
+          </div>
+  </header>
+  <div class="main-container">
+
+
+    <div class="title">The Best Free Feng Shui AI ChatBot</div>
+    
+    <div class="ads" style="height:250px; width:300px; min-height:0px; margin: 0 auto;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8453739645849559"
+        crossorigin="anonymous"></script>
+   <!-- LGT-footer-DP-all-300_250-web&wap -->
+   <ins class="adsbygoogle"
+        style="display:inline-block;width:300px;height:250px"
+        data-ad-client="ca-pub-8453739645849559"
+        data-ad-slot="8128813282"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+                </div> 
+    <div class="chat">
+    <div id="chat-container" class="chat-container">
+      <h1>Fengshui Chatbot</h1>
+    <div id="chat-history"></div>
+    <div class="input-container">
+        <input type="text" id="user-input" placeholder="Enter your message">
+        <div class="send-icon" id="send-button" >
+          <img src="img/send.webp" alt="Send">
+      </div>
+    </div>
+    </div>
+    <div id="loader">
+      <img src="img/loader.gif" width="150px" alt="Loading...">
+    </div>
+   </div>
+  </div>
+  <div class="tips-section">
+    <h2>Tips to Best Use Our AI Chatbot</h2>
+    <p>Whether you're just starting to explore the principles of Feng Shui or you're an experienced practitioner seeking to refine your knowledge, I'm here to assist you.</p>
+    <p>Don't hesitate to ask me any questions related to Feng Shui, including:</p>
+    <ul>
+      <li>The five elements and their significance.</li>
+      <li>Bagua maps and their application.</li>
+      <li>Optimal furniture placement for good energy flow.</li>
+      <li>Color choices and their impact on your space.</li>
+      <li>Room-specific Feng Shui tips (bedroom, office, kitchen, etc.).</li>
+      <li>Solutions for common Feng Shui challenges.</li>
+      <li>Using Feng Shui to improve relationships, career, and wealth.</li>
+  </ul>
+  </div>
+  <div class="examples-section">
+    <h2>Explore How to Make the Most of Chi AI Chatbot</h2>
+
+    <h3>1. Specify Your Concerns Clearly</h3>
+    <button class="show-btn" onclick="toggleExamples(0)">Show Examples</button>
+    <ul>
+        <li><span>Example:</span> “I’m struggling with insomnia; what Feng Shui changes can I make to my bedroom to sleep better?”</li>
+        <li><span>Example:</span> “My living room feels disorganized and chaotic. What are some Feng Shui tips to create a calmer space?”</li>
+    </ul>
+
+    <h3>2. Provide Details About Your Space</h3>
+    <button class="show-btn" onclick="toggleExamples(1)">Show Examples</button>
+    <ul>
+        <li><span>Example:</span> “My kitchen is small and doesn’t get much natural light. What colors and decor can make it feel brighter and more open?”</li>
+        <li><span>Example:</span> “I have a spacious living room with high ceilings. How can I make it feel more cozy and intimate?”</li>
+    </ul>
+
+    <h3>3. Share Your Specific Goals</h3>
+    <button class="show-btn" onclick="toggleExamples(2)">Show Examples</button>
+    <ul>
+        <li><span>Example:</span> “I’m looking to attract more wealth into my life. What Feng Shui elements should I add to my home office?”</li>
+        <li><span>Example:</span> “I want to improve my family’s health and harmony. What should I focus on in the East area of my home?”</li>
+    </ul>
+
+    <h3>4. Ask About Key Feng Shui Concepts</h3>
+    <button class="show-btn" onclick="toggleExamples(3)">Show Examples</button>
+    <ul>
+        <li><span>Example:</span> “What colors should I use in my bedroom to encourage relaxation and better sleep?”</li>
+        <li><span>Example:</span> “How can I balance the five elements in my living room to create a harmonious environment?”</li>
+    </ul>
+
+    <h3>5. Address Common Challenges</h3>
+    <button class="show-btn" onclick="toggleExamples(4)">Show Examples</button>
+    <ul>
+        <li><span>Example:</span> “What are some common Feng Shui mistakes to avoid in my living room?”</li>
+        <li><span>Example:</span> “How can I use Feng Shui to boost my career and professional opportunities?”</li>
+    </ul>
+
+    <h3>6. Seek Clarification on Feng Shui Techniques</h3>
+    <button class="show-btn" onclick="toggleExamples(5)">Show Examples</button>
+    <ul>
+        <li><span>Example:</span> “Can you explain how to apply the Bagua map to improve various areas of my life?”</li>
+        <li><span>Example:</span> “What are some effective Feng Shui remedies for a home with irregularly shaped rooms?”</li>
+    </ul>
+</div>
+<div class="unlock-section">
+  <h2>UNLOCK THE POWER OF FENG SHUI TODAY</h2>
+  <p>Embark on your Feng Shui journey with the Chi AI Chatbot. We are wholeheartedly committed to transforming your living and working spaces through the ancient wisdom of Feng Shui.</p>
+  <p>Our approach is enhanced by the strength of artificial intelligence, allowing us to provide you with tailored advice that can profoundly impact your environment. We believe these two elements—Feng Shui and AI—are the keys to creating a harmonious and thriving space for you.</p>
+  <img src="img/unlock.webp" alt="Unlock the Power of Feng Shui" class="unlock-image">
+  <p>Until now, finding a dedicated and reliable source of Feng Shui knowledge online has been a challenge. That changes today! With our chatbot, you have access to quick, reliable, and personalized guidance that adapts to your needs.</p>
+  <p>Our intuitive and user-friendly interface works seamlessly on any modern device, making it easier than ever to integrate Feng Shui into your life.</p>
+</div>
+<div class="elevate-section">
+  <h2>Experience the Art of Feng Shui with Chi AI</h2>
+  <p>Transform every corner of your world into a sanctuary of harmony and serenity. With Chi AI, the ancient art of Feng Shui is reimagined for the modern era, bringing timeless wisdom directly to your fingertips.</p>
+  <img src="img/zen-stones.webp" alt="Feng Shui Zen Stones" class="elevate-image">
+  <p>For the bold and the unconventional, Chi AI provides a fusion of personalized Feng Shui insights that can be uniquely tailored to reflect your individual spirit and taste.</p>
+</div>
+<div class="enhance-section">
+  <h2>Enhance Your Space with Chi, the Feng Shui AI Chatbot</h2>
+  <p><img src="img/zen-thin2.webp" alt="Feng Shui Guidance" class="enhance-image"> Chi offers expert recommendations across various settings, whether it’s your home, office, or garden. Experience the profound benefits of personalized feng shui insights, guiding you to create spaces that foster well-being and harmony.</p>
+  <p><img src="img/zen-thin1.webp" alt="Elevate Your Space" class="enhance-image"> Artificial intelligence offers Feng Shui teachings and suggestions that are personalized for your home, office, and garden. These are not one-size-fits-all tips. Using real-time and historical data, this chatbot understands the unique context of your spaces.</p>
+  <p><img src="img/zen-thin3.webp" alt="AI-Driven Insights" class="enhance-image"> So, if you’re seeking to bring peace to your garden, harmony to your living room, or productivity to your office, this AI has expert advice.</p>
+</div>
+<div class="chi-ai-section">
+  <h2>Chi AI</h2>
+  <p>Have you ever wondered how Feng Shui AI can help you design your home interior or find ways to enhance your living space?</p>
+  <img src="img/ai.webp" alt="Chi AI Feng Shui" class="chi-ai-image">
+  <p>If so, don't hesitate to engage in the live chat. Chi AI is ready to access its extensive knowledge base and the latest information to ensure you receive not just an answer, but the perfect solution tailored to your needs.</p>
+</div>
+</main>
+<footer>
+  <nav>
+      <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+  </nav>
+  <p>&copy; 2024 fengshui. All rights reserved.</p>
+</footer>
+  <script>
+    function toggleExamples(index) {
+        const ulElements = document.querySelectorAll('.examples-section ul');
+        const currentUl = ulElements[index];
+        if (currentUl.style.display === 'none' || currentUl.style.display === '') {
+            currentUl.style.display = 'block';
+        } else {
+            currentUl.style.display = 'none';
+        }
+    }
+    const chatHistory = document.getElementById('chat-history');
+    const userInput = document.getElementById('user-input');
+    const form = document.getElementById('chat-form');
+
+    async function sendMessage() {
+      const userMessage = userInput.value;
+      userInput.value = ''; // Clear input field
+      console.log(userMessage)
+      try {
+        const response = await fetch('/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ userInput: userMessage }),
+        });
+
+        const data = await response.json();
+        console.log(data)
+        const botMessage = data.response;
+        console.log(botMessage)
+        // Add chat message to the chat history
+        chatHistory.innerHTML += `<div class="user-message">${userMessage}</div>`;
+        chatHistory.innerHTML += `<div class="bot-message">${botMessage}</div>`;
+
+        // Scroll to the bottom of the chat history
+        chatHistory.scrollTop = chatHistory.scrollHeight;
+      } catch (error) {
+        console.error('Error:', error);
+        // Handle errors gracefully, e.g., display an error message to the user
+      }
+    }
+
+    document.getElementById('send-button').addEventListener('click', (event) => {
+      event.preventDefault();
+      const loader = document.getElementById('loader');
+      loader.style.display = 'block'; // Show the loader
+      sendMessage().finally(() => {
+        loader.style.display = 'none'; // Hide the loader after the message is sent
+      });;
+    });
+    userInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault(); // Prevent the default action (form submission or newline)
+        document.getElementById('send-button').click(); // Simulate click on the send button
+      }
+    });
+    
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+        var nav = document.querySelector('nav');
+        if (nav.style.display === 'block') {
+            nav.style.display = 'none';
+        } else {
+            nav.style.display = 'block';
+        }
+    });
+  
+    document.querySelector('.search-toggle').addEventListener('click', function() {
+        var searchContainer = document.querySelector('.search-container');
+        if (searchContainer.style.display === 'flex') {
+            searchContainer.style.display = 'none';
+        } else {
+            searchContainer.style.display = 'flex';
+        }
+    });
+    document.querySelector('.chat-container').addEventListener('click', () => {
+      scrollToChat();
+    });
+
+    function scrollToChat() {
+      const chatContainer = document.querySelector('.chat-container');
+      
+    // Check if the chatContainer exists
+      if (chatContainer) {
+          console.log("hello wrold")
+          const chatRect = chatContainer.getBoundingClientRect();
+          const viewportHeight = window.innerHeight;
+
+         
+              window.scrollTo({
+                  top: window.scrollY + (chatRect.bottom - viewportHeight),
+                  behavior: 'smooth'
+              });
+          
+      } 
+       
+    }
+  </script>
+</body>
+
+</html>

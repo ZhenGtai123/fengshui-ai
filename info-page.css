@@ -1,0 +1,140 @@
+/* General Styles for the Information Pages */
+body {
+  font-family: "Helvetica", serif;
+  background-color: #f9f2e9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #d3d3d3; /* Light gray border */
+  position: relative;
+}
+.logo {
+  position: relative;
+}
+.logo img {
+  height: 50px;
+}
+header .nav-toggle,
+.search-toggle {
+  cursor: pointer;
+  font-weight: bold;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+header .nav-toggle svg,
+.search-toggle svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+header nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header nav ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+header nav ul li {
+  margin-bottom: 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000000; /* Ink Black */
+  font-weight: bold;
+}
+header nav ul li:last-child {
+  margin-bottom: 0;
+}
+.search-container {
+  display: none;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.search-container input[type="text"] {
+  padding: 5px;
+  border: 1px solid #d3d3d3; /* Light gray border */
+  border-radius: 4px;
+}
+.search-container button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  background-color: #708090; /* Slate Gray */
+  color: #ffffff; /* White text */
+  border-radius: 4px;
+  cursor: pointer;
+}
+#info {
+  max-width: 1000px;
+  margin: 60px auto;
+  background-color: #f6f6e2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+}
+
+#info h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #000000; /* Darker, more formal theme color */
+  border-bottom: 2px solid #654321; /* Add an accent color */
+  padding-bottom: 10px;
+}
+
+#info p {
+  font-size: 20px;
+  text-align: left;
+}
+
+#info p:last-child {
+  margin-bottom: 0; /* Remove margin from last paragraph */
+}
+
+#info::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #654321; /* Accent color */
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+/* Additional styles for a responsive layout */
+@media only screen and (max-width: 600px) {
+  #info {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  #info h2 {
+    font-size: 28px;
+  }
+
+  #info p {
+    font-size: 18px;
+  }
+}

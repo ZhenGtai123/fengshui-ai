@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="info-page.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0R3GXH6EJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L0R3GXH6EJ');
+</script>
+</head>
+<body>
+
+
+
+<main>
+  <header>
+    
+    <div class="nav-toggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+      Menu
+    </div>
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo" src="img/logo.webp" alt="Feng Shui Analysis Logo">
+      </a>
+    </div>
+    <div class="search-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M18 11a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      Search
+  </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+</header>
+  <section id="info">
+    
+    <h2>About Us</h2>
+    <p>Welcome to our website, where ancient wisdom meets modern technology. Our mission is to provide a unique and personalized Feng Shui analysis experience through our innovative chatbot. We understand that the energy flow in your living space can have a profound impact on your well-being, and we're here to help you optimize it.</p>
+    <p>Our chatbot is designed to analyze the specific Feng Shui needs of your home, offering insights and recommendations tailored to your personal environment. Whether you're looking to enhance the harmony in your space, improve the flow of energy, or simply explore the principles of Feng Shui, our platform is here to guide you.</p>
+    <p>We are committed to making Feng Shui accessible and easy to understand for everyone. By combining traditional practices with cutting-edge AI technology, we aim to bring the benefits of Feng Shui into the digital age, making it easier than ever for you to create a balanced and harmonious home.</p>
+    <p>Thank you for choosing us as your trusted source for Feng Shui analysis. We look forward to helping you achieve the perfect balance in your living space.</p>
+  </section>
+</main>
+
+<footer>
+  <nav>
+    <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+</nav>
+  <p>&copy; 2024 fengshui. All rights reserved.</p>
+</footer>
+<script>
+  document.querySelector('.nav-toggle').addEventListener('click', function() {
+      var nav = document.querySelector('nav');
+      if (nav.style.display === 'block') {
+          nav.style.display = 'none';
+      } else {
+          nav.style.display = 'block';
+      }
+  });
+
+  document.querySelector('.search-toggle').addEventListener('click', function() {
+      var searchContainer = document.querySelector('.search-container');
+      if (searchContainer.style.display === 'flex') {
+          searchContainer.style.display = 'none';
+      } else {
+          searchContainer.style.display = 'flex';
+      }
+  });
+</script>
+</body>
+</html>

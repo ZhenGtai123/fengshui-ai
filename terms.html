@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="info-page.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0R3GXH6EJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L0R3GXH6EJ');
+</script>
+</head>
+<body>
+
+
+<main>
+  <header>
+    
+    <div class="nav-toggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+      Menu
+    </div>
+    <div class="logo">
+      <a href="index.html">
+                <img class="logo" src="img/logo.webp" alt="Feng Shui Analysis Logo">
+      </a>
+    </div>
+    <div class="search-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M18 11a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      Search
+  </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+</header>
+  <section id="info">
+    <h2>Terms of Service</h2>
+
+    <p>Welcome to our website. By accessing and using our services, you agree to comply with and be bound by the following terms and conditions. Please read them carefully.</p>
+
+    <h3>1. Acceptance of Terms</h3>
+    <p>By using our Feng Shui analysis chatbot and associated services, you agree to be bound by these Terms of Service. If you do not agree to these terms, you may not use our services.</p>
+
+    <h3>2. Use of Services</h3>
+    <p>Our chatbot is designed to provide Feng Shui analysis and recommendations based on user inputs. The information and services provided are for general informational purposes only and should not be considered as professional advice. You are responsible for ensuring that any information you provide is accurate and complete.</p>
+
+    <h3>3. Privacy Policy</h3>
+    <p>Your privacy is important to us. Our Privacy Policy outlines how we collect, use, and protect your personal information. By using our services, you consent to the collection and use of your information as described in our Privacy Policy.</p>
+
+    <h3>4. User Responsibilities</h3>
+    <p>You agree to use our services in a manner that is lawful and respectful of others. You must not use our chatbot to transmit any material that is harmful, offensive, or violates any law. We reserve the right to terminate or restrict your access to our services if we determine that your use violates these terms.</p>
+
+    <h3>5. Intellectual Property</h3>
+    <p>All content and materials on our website, including text, graphics, logos, and software, are the property of our website and are protected by intellectual property laws. You may not reproduce, distribute, or create derivative works from any content on our site without our express written permission.</p>
+
+    <h3>6. Disclaimer of Warranties</h3>
+    <p>Our services are provided "as is" without any warranties, express or implied. We do not guarantee the accuracy, completeness, or reliability of the information provided by our chatbot. You use our services at your own risk.</p>
+
+    <h3>7. Limitation of Liability</h3>
+    <p>To the fullest extent permitted by law, we will not be liable for any damages arising from your use of our services, including direct, indirect, incidental, or consequential damages.</p>
+
+    <h3>8. Changes to the Terms</h3>
+    <p>We reserve the right to update or modify these Terms of Service at any time. Any changes will be posted on this page, and it is your responsibility to review these terms periodically. Your continued use of our services after any changes constitute your acceptance of the new terms.</p>
+
+    <h3>9. Contact Information</h3>
+    <p>If you have any questions or concerns about these Terms of Service, please contact us at support@fengshui.com .</p>
+  </section>
+</main>
+
+<footer>
+  <nav>
+    <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+</nav>
+  <p>&copy; 2024 fengshui. All rights reserved.</p>
+</footer>
+<script>
+  document.querySelector('.nav-toggle').addEventListener('click', function() {
+      var nav = document.querySelector('nav');
+      if (nav.style.display === 'block') {
+          nav.style.display = 'none';
+      } else {
+          nav.style.display = 'block';
+      }
+  });
+
+  document.querySelector('.search-toggle').addEventListener('click', function() {
+      var searchContainer = document.querySelector('.search-container');
+      if (searchContainer.style.display === 'flex') {
+          searchContainer.style.display = 'none';
+      } else {
+          searchContainer.style.display = 'flex';
+      }
+  });
+</script>
+</body>
+</html>
