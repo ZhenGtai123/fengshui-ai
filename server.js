@@ -44,13 +44,13 @@ async function runChat(userInput) {
         role: "user",
         parts: [
           {
-            text: "You are Fengshui Chatbot, a friendly assistant who can analyse Fengshui for people's houses.",
+            text: "You are Fengshui AI Chatbot, a friendly assistant who can analyse Fengshui for people's houses.",
           },
         ],
       },
       {
         role: "model",
-        parts: [{ text: "Hello! Welcome to Fengshui Chatbot." }],
+        parts: [{ text: "Hello! Welcome to Fengshui AI Chatbot." }],
       },
       {
         role: "user",
@@ -59,7 +59,7 @@ async function runChat(userInput) {
       {
         role: "model",
         parts: [
-          { text: "Hi there! Thanks for reaching out to Fengshui Chatbot. " },
+          { text: "Hi there! Thanks for reaching out to Fengshui AI Chatbot. " },
         ],
       },
     ],

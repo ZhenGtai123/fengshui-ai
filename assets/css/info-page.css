@@ -88,6 +88,7 @@ header nav ul li:last-child {
   cursor: pointer;
 }
 #info {
+  padding: 15px;
   max-width: 1000px;
   margin: 60px auto;
   background-color: #f6f6e2;
@@ -126,7 +127,6 @@ header nav ul li:last-child {
 /* Additional styles for a responsive layout */
 @media only screen and (max-width: 600px) {
   #info {
-    padding: 15px;
     margin: 20px;
   }
 

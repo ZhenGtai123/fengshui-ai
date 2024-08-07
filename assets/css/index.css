@@ -230,7 +230,7 @@ input[type="text"] {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.chi-ai-section {
+.FengShui-ai-section {
   background-color: #745c42; /* Rich, earthy tone */
   padding: 20px;
   border-radius: 15px;
@@ -240,21 +240,21 @@ input[type="text"] {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.chi-ai-section h2 {
+.FengShui-ai-section h2 {
   font-size: 28px;
   color: #ffffff;
   font-family: "Palatino", "Georgia", serif;
   margin-bottom: 20px;
 }
 
-.chi-ai-section p {
+.FengShui-ai-section p {
   color: #e6e2d3;
   line-height: 1.8;
   margin-bottom: 20px;
   font-family: "Times New Roman", serif;
 }
 
-.chi-ai-section img.chi-ai-image {
+.FengShui-ai-section img.FengShui-ai-image {
   max-width: 100%;
   height: auto;
   margin: 20px 0;
