@@ -3,8 +3,12 @@
 
 const express = require('express');
 const path = require('path');
-const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require('@google/generative-ai');
-const dotenv = require('dotenv').config()
+const {
+  GoogleGenerativeAI,
+  HarmCategory,
+  HarmBlockThreshold,
+} = require('@google/generative-ai');
+const dotenv = require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -38,19 +42,25 @@ async function runChat(userInput) {
     history: [
       {
         role: "user",
-        parts: [{ text: "You are Fengshui Chatbot, a friendly assistant who can analyse Fengshui for people's houses."}],
+        parts: [
+          {
+            text: "You are Fengshui Chatbot, a friendly assistant who can analyse Fengshui for people's houses.",
+          },
+        ],
       },
       {
         role: "model",
-        parts: [{ text: "Hello! Welcome to Fengshui Chatbot."}],
+        parts: [{ text: "Hello! Welcome to Fengshui Chatbot." }],
       },
       {
         role: "user",
-        parts: [{ text: "Hi"}],
+        parts: [{ text: "Hi" }],
       },
       {
         role: "model",
-        parts: [{ text: "Hi there! Thanks for reaching out to Fengshui Chatbot. "}],
+        parts: [
+          { text: "Hi there! Thanks for reaching out to Fengshui Chatbot. " },
+        ],
       },
     ],
   });
@@ -64,13 +74,13 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/img/loader.gif', (req, res) => {
-  res.sendFile(path.join(__dirname + '/img/loader.gif'));
+app.get('/assets/img/loader.gif', (req, res) => {
+  res.sendFile(path.join(__dirname + '/assets/img/loader.gif'));
 });
 app.post('/chat', async (req, res) => {
   try {
     const userInput = req.body?.userInput;
-    console.log('incoming /chat req', userInput)
+    console.log('incoming /chat req', userInput);
     if (!userInput) {
       return res.status(400).json({ error: 'Invalid request body' });
     }
