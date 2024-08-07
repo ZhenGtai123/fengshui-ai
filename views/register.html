@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Title -->
+    <title>Registration | FengShuiAIBot.com | Free AI-Powered Feng Shui Consultation & Home Analysis</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Unlock the secrets of Feng Shui with FengShuiAIBot! Get personalized, free AI-driven Feng Shui consultations, home and office analysis, and tips to harmonize your living space. Enhance your well-being, attract positive energy, and achieve balance with our advanced Feng Shui tools and guides. Perfect for anyone seeking prosperity, health, and happiness through Feng Shui principles.">
+<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/register.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0R3GXH6EJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L0R3GXH6EJ');
+</script>
+</head>
+<body>
+
+
+<main>
+  <header>
+    
+    <div class="nav-toggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+      Menu
+    </div>
+    <div class="logo">
+      <a href="/index.html">
+                <img class="logo" src="../assets/img/logo.webp" alt="Feng Shui Analysis Logo">
+      </a>
+    </div>
+    <div class="search-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M18 11a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      Search
+  </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/views/terms.html">Services</a></li>
+                <li><a href="/views/about.html">About</a></li>
+                <li><a href="/views/privacy.html">Privacy</a></li>
+                  <li><a href="/views/register.html">Account</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+</header>
+<div class="register-container">
+    <h2>Create an Account</h2>
+    <form id="register-form">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label>
+            
+            <select id="country" required>
+                <!-- Example country list -->
+                <option value="">Select your country</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Australia">Australia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="India">India</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Norway">Norway</option>
+                <option value="Russia">Russia</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Spain">Spain</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Other">Other</option>
+                <!-- Add more countries here -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" required>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" required>
+        </div>
+        
+        <div class="form-group terms">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the <a href="/views/conditions.html" target="_blank">Terms and Conditions</a></label>
+        </div>
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+</main>
+
+<footer>
+  <nav>
+    <ul>
+        <li><a href="../views/about.html">About Us</a></li>
+        <li><a href="../views/terms.html">Terms of Service</a></li>
+        <li><a href="../views/privacy.html">Privacy Policy</a></li>
+    </ul>
+</nav>
+  <p>&copy; 2024 FengShui. All rights reserved.</p>
+</footer>
+<script>
+  document.querySelector('.nav-toggle').addEventListener('click', function() {
+      var nav = document.querySelector('nav');
+      if (nav.style.display === 'block') {
+          nav.style.display = 'none';
+      } else {
+          nav.style.display = 'block';
+      }
+  });
+
+  document.querySelector('.search-toggle').addEventListener('click', function() {
+      var searchContainer = document.querySelector('.search-container');
+      if (searchContainer.style.display === 'flex') {
+          searchContainer.style.display = 'none';
+      } else {
+          searchContainer.style.display = 'flex';
+      }
+  });
+  document.getElementById('register-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Get form values
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+
+        // Validate password match
+        if (password !== confirmPassword) {
+            alert('Passwords do not match.');
+            return;
+        }
+
+        // Add form submission logic here
+        alert('Form submitted successfully!');
+    });
+</script>
+</body>
+</html>
