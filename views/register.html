@@ -9,7 +9,7 @@
     <!-- Meta Description -->
     <meta name="description" content="Unlock the secrets of Feng Shui with FengShuiAIBot! Get personalized, free AI-driven Feng Shui consultations, home and office analysis, and tips to harmonize your living space. Enhance your well-being, attract positive energy, and achieve balance with our advanced Feng Shui tools and guides. Perfect for anyone seeking prosperity, health, and happiness through Feng Shui principles.">
 <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/register.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/account.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0R3GXH6EJ"></script>
 <script>
@@ -57,7 +57,7 @@
                 <li><a href="/views/terms.html">Services</a></li>
                 <li><a href="/views/about.html">About</a></li>
                 <li><a href="/views/privacy.html">Privacy</a></li>
-                  <li><a href="/views/register.html">Account</a></li>
+                  <li><a href="/views/login.html">Account</a></li>
             </ul>
         </nav>
         <div class="search-container">
@@ -65,7 +65,7 @@
             <button type="button">Search</button>
         </div>
 </header>
-<div class="register-container">
+<div class="account-container">
     <h2>Create an Account</h2>
     <form id="register-form">
         <div class="form-group">
@@ -164,21 +164,42 @@
           searchContainer.style.display = 'flex';
       }
   });
-  document.getElementById('register-form').addEventListener('submit', function(event) {
+  document.getElementById('register-form').addEventListener('submit', async function(event) {
         event.preventDefault();
         
         // Get form values
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirm-password').value;
-
+        const firstName = document.getElementById('first-name').value;
+        const lastName = document.getElementById('last-name').value;
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const country = document.getElementById('country').value;
         // Validate password match
         if (password !== confirmPassword) {
             alert('Passwords do not match.');
             return;
         }
+        try {
+            const response = await fetch('/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ firstName, lastName, username, email, password, country }),
+            });
 
-        // Add form submission logic here
-        alert('Form submitted successfully!');
+            if (response.ok) {
+                alert('Registration successful!');
+                window.location.href = 'login.html';
+            } else {
+                const errorData = await response.json();
+                alert('Error: ' + errorData.error);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again.');
+        }
     });
 </script>
 </body>

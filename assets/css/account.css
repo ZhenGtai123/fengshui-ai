@@ -4,13 +4,14 @@ body {
     margin: 0;
 }
 
-.register-container {
+.account-container {
+    max-width: 600px;
     margin: auto;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+    min-height: 80vh;
 }
 
 h2 {
@@ -60,7 +61,22 @@ button {
 button:hover {
     background-color: #45a049;
 }
+.forgot-password,
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
 
+.forgot-password a,
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover,
+.register-link a:hover {
+    text-decoration: underline;
+}
 .error {
     color: red;
     font-size: 12px;
